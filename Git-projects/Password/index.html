@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="wapper">
+        <div class="window">
+            <div class="top">
+                <h1>Password Generator</h1>
+                <span class="material-symbols-outlined" id="copy">
+                    content_copy
+                </span>
+            </div>
+            
+            <input type="text" name="Password" id="pass" disabled>
+            <div class="adiv">
+                <input type="range" name="slider" min="3" max="50" id="range">
+            </div>
+            <div class="row">
+                <p>Password Length</p>
+                <span id="rangeVal">3</span>
+            </div>
+            <div class="row">
+                <label for="lowercase">Inlude lowercase letters (a-z)</label>
+                <input type="checkbox" name="lowercase" id="lowercase">
+            </div>
+            
+            <div class="row">
+                <label for="uppercase">Inlude uppercase letters (A-Z)</label>
+                <input type="checkbox" name="uppercase" id="uppercase">
+            </div>
+            
+            <div class="row">
+                <label for="numbers">Inlude numbers (0-9)</label>
+                <input type="checkbox" name="numbers" id="numbers">
+            </div>
+            
+            <div class="row">
+                <label for="symbols">Inlude symbols (!@..)</label>
+                <input type="checkbox" name="symbols" id="symbols">
+            </div>
+
+            <button id="submit">Generate</button>      
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

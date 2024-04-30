@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.wapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;background: rgb(86,10,232);
+    background: linear-gradient(125deg, rgba(86,10,232,1) 0%, rgba(142,46,204,1) 27%, rgba(255,0,248,1) 81%);
+
+}
+
+.window{
+
+    width: 400px;
+    padding: 20px;
+    border: 5px dashed rgba(33, 27, 74, 0.726);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(33, 27, 74, 0.726);
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top span{
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.top span:hover{
+    background-color: blueviolet;
+    transition: 0.3s ease-in;
+}
+
+h1{
+    font-size: x-large;
+    color: rgb(243, 216, 242);
+}
+
+input{
+    display: block;
+    margin: 8px 0;
+    width: 100%;
+    outline: none;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+input[type="range"]{
+    cursor: pointer;
+}
+
+#pass{
+    height: 30px;
+    border: 3px outset rgba(33, 27, 74, 0.726);
+    color: blueviolet;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    margin-block: 8px;
+}
+
+.row p, .row label{
+    flex-basis: 100%;
+    cursor: pointer;
+}
+
+.row input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.row input[type="checkbox"]:hover{
+    transform: scale(1.5);
+    transition:0.1s ease-in-out ;
+}
+
+#submit{
+    width: 100%;
+    background-color: rgb(192, 43, 226);
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: larger;
+    color: rgb(243, 216, 242);
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: blueviolet;
+    transition: 0.4s ease ;
+}
